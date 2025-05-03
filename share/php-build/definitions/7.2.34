@@ -3,8 +3,8 @@ configure_option "--with-gd"
 configure_option "--with-png-dir" "/usr"
 configure_option "--with-jpeg-dir" "/usr"
 configure_option "--enable-zip"
-
-patch_file "php-7.2-openssl.patch"
+configure_option "--with-openssl" "/opt/openssl-1.1.1i/bin"
+configure_option "--with-openssl-dir" "/opt/openssl-1.1.1i/bin"
 
 install_package "https://secure.php.net/distributions/php-7.2.34.tar.bz2"
 install_xdebug "3.1.6"
